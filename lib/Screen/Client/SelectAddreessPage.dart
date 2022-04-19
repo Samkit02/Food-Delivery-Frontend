@@ -91,7 +91,7 @@ class _WithoutListAddress extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SvgPicture.asset('Assets/my-location.svg', height: 400 ),
-          TextFrave(text: 'Without Address', fontSize: 25, fontWeight: FontWeight.w500, color: ColorsFrave.secundaryColor ),
+          TextFrave(text: 'No Address', fontSize: 25, fontWeight: FontWeight.w500, color: ColorsFrave.secundaryColor ),
           SizedBox(height: 80),
         ],
       ),

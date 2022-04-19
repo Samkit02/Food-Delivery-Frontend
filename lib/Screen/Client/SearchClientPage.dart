@@ -113,7 +113,7 @@ class _SearchClientPageState extends State<SearchClientPage> {
 
         if( snapshot.data!.length == 0 ) {
           return ListTile(
-            title: TextFrave(text: 'Without results for ${_searchController.text}'),
+            title: TextFrave(text: 'no results for ${_searchController.text}'),
           );
         }
 

@@ -75,7 +75,7 @@ class _ListOrdersForDelivery extends StatelessWidget {
         children: [
           Center(child: SvgPicture.asset('Assets/no-data.svg', height: 300)),
           SizedBox(height: 15.0),
-          TextFrave(text: 'Without Orders on way', color: ColorsFrave.primaryColor, fontWeight: FontWeight.w500, fontSize: 21)
+          TextFrave(text: 'No Orders on way', color: ColorsFrave.primaryColor, fontWeight: FontWeight.w500, fontSize: 21)
         ],
       );
   }

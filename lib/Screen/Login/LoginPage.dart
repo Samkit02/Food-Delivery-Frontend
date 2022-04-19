@@ -4,6 +4,7 @@ import 'package:restaurant/Bloc/Auth/auth_bloc.dart';
 import 'package:restaurant/Bloc/User/user_bloc.dart';
 import 'package:restaurant/Helpers/validate_form.dart';
 import 'package:restaurant/Screen/Client/ClientHomePage.dart';
+import 'package:restaurant/Screen/Delivery/DeliveryHomePage.dart';
 import 'package:restaurant/Screen/Home/SelectRolePage.dart';
 import 'package:restaurant/Screen/Intro/IntroPage.dart';
 import 'package:restaurant/Screen/Login/ForgotPasswordPage.dart';
@@ -69,7 +70,7 @@ class _LoginPageState extends State<LoginPage> {
           userBloc.add( OnGetUserEvent(state.user!) );
           Navigator.pop(context);
 
-          if( state.rolId == '1' || state.rolId == '3' ){
+          if( state.rolId == '1' ){
 
             Navigator.pushAndRemoveUntil(context, routeFrave(page: SelectRolePage()), (route) => false);
           
@@ -77,6 +78,10 @@ class _LoginPageState extends State<LoginPage> {
 
             Navigator.pushAndRemoveUntil(context, routeFrave(page: ClientHomePage()), (route) => false);
         
+          } else if ( state.rolId == '3' ){
+
+            Navigator.pushAndRemoveUntil(context, routeFrave(page: DeliveryHomePage()), (route) => false);
+
           }
         }
       },
@@ -109,8 +114,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       Row(
                         children: [
-                          TextFrave(text: 'Frave ', color: ColorsFrave.primaryColor, fontWeight: FontWeight.w500 ),
-                          TextFrave(text: 'Food', color: Colors.black87, fontWeight: FontWeight.w500 ),
+                          TextFrave(text: 'Food ', color: ColorsFrave.primaryColor, fontWeight: FontWeight.w500 ),
+                          TextFrave(text: 'WE', color: Colors.black87, fontWeight: FontWeight.w500 ),
                         ],
                       )
                     ],

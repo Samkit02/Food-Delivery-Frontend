@@ -89,34 +89,7 @@ class ProfileClientPage extends StatelessWidget
                 colorIcon: 0xffFBAD49,
                 onPressed: () => Navigator.push(context, routeFrave(page: ClientOrdersPage())),
               ),
-              ItemAccount(
-                text: 'Dark mode',
-                icon: Icons.dark_mode_rounded,
-                colorIcon: 0xff051E2F,
-              ),
               SizedBox(height: 15.0),
-              TextFrave(text: 'Personal', color: Colors.grey ),
-              SizedBox(height: 10.0),
-              ItemAccount(
-                text: 'Privacy & Policy',
-                icon: Icons.policy_rounded,
-                colorIcon: 0xff6dbd63,
-              ),
-              ItemAccount(
-                text: 'Security',
-                icon: Icons.lock_outline_rounded,
-                colorIcon: 0xff1F252C,
-              ),
-              ItemAccount(
-                text: 'Term & Conditions',
-                icon: Icons.description_outlined,
-                colorIcon: 0xff458bff,
-              ),
-              ItemAccount(
-                text: 'Help',
-                icon: Icons.help_outline,
-                colorIcon: 0xff4772e6,
-              ),
               Divider(),
               ItemAccount(
                 text: 'Sign Out',

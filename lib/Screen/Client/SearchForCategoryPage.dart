@@ -93,7 +93,7 @@ class ListProducts extends StatelessWidget {
       child: Column(
         children: [
           SvgPicture.asset('Assets/empty-cart.svg', height: 450),
-          TextFrave(text: 'Without products', fontSize: 21, color: ColorsFrave.primaryColor )
+          TextFrave(text: 'No products', fontSize: 21, color: ColorsFrave.primaryColor )
         ],
       ),
     );

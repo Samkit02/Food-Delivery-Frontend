@@ -211,8 +211,8 @@ class _WithOutProducts extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          SvgPicture.asset('Assets/empty-cart.svg', height: 450),
-          TextFrave(text: 'Without products', fontSize: 21, fontWeight: FontWeight.w500, color: ColorsFrave.primaryColor,)
+          SvgPicture.asset('Assets/empty-cart.svg', height: 350),
+          TextFrave(text: 'No products', fontSize: 21, fontWeight: FontWeight.w500, color: ColorsFrave.primaryColor,)
         ],
       ),
     );

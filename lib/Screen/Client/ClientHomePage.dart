@@ -63,7 +63,7 @@ class ClientHomePage extends StatelessWidget {
                       ),
                       Positioned(
                         right: 0,
-                        bottom: 5,
+                        top: 5,
                         child: Container(
                             height: 20,
                             width: 15,
@@ -111,7 +111,7 @@ class ClientHomePage extends StatelessWidget {
                       child: BlocBuilder<UserBloc, UserState>(
                         builder: (context, state) 
                           => TextFrave( 
-                              text: ( state.addressName != '' ) ? state.addressName : 'without direction', 
+                              text: ( state.addressName != '' ) ? state.addressName : 'No direction',
                               color: ColorsFrave.primaryColor, 
                               fontSize: 17,
                               maxLine: 1,
@@ -162,7 +162,7 @@ class ClientHomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 TextFrave(text: 'Populer Items', fontSize: 21, fontWeight: FontWeight.w500 ),
-                TextFrave(text: 'See All', color: ColorsFrave.primaryColor, fontSize: 17)
+                TextFrave(text: '', color: ColorsFrave.primaryColor, fontSize: 17)
               ],
             ),
             SizedBox(height: 20.0),

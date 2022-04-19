@@ -42,7 +42,7 @@ class SelectRolePage extends StatelessWidget {
                 color2: Colors.greenAccent.withOpacity(.1),
                 onPressed: () => Navigator.pushAndRemoveUntil(context, routeFrave(page: AdminHomePage()), (route) => false),
               ) : Container(),
-              (authBloc.user!.rolId == 1 || authBloc.user!.rolId == 3 )
+              (authBloc.user!.rolId == 1 )
                 ? _BtnRol(
                 svg: 'Assets/svg/bussiness-man.svg',
                 text: 'Client',
@@ -50,7 +50,7 @@ class SelectRolePage extends StatelessWidget {
                 color2: Colors.amber.withOpacity(.1),
                 onPressed: () => Navigator.pushReplacement(context, routeFrave(page: ClientHomePage())),
               ) : Container() ,
-              (authBloc.user!.rolId == 1 || authBloc.user!.rolId == 3 ) 
+              (authBloc.user!.rolId == 1 )
                 ? _BtnRol(
                 svg: 'Assets/svg/delivery-bike.svg',
                 text: 'Delivery',

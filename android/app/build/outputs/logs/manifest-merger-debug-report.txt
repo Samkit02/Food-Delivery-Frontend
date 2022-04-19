@@ -209,7 +209,7 @@ MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\computer\.g
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\computer\.gradle\caches\transforms-3\4e957a83bc7a9473fd32bbb8b429fe48\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from F:\Samkit\projects\Flutter-Delivery-App-main\android\app\src\main\AndroidManifest.xml:32:9-35
+		ADDED from F:\Samkit\projects\Flutter-Delivery-App-main\android\app\src\main\AndroidManifest.xml:32:9-32
 	android:icon
 		ADDED from F:\Samkit\projects\Flutter-Delivery-App-main\android\app\src\main\AndroidManifest.xml:35:9-43
 	android:usesCleartextTraffic

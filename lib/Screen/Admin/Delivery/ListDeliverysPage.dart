@@ -157,7 +157,7 @@ class _ListDelivery extends StatelessWidget {
         children: [
           SvgPicture.asset('Assets/no-data.svg', height: 290),
           SizedBox(height: 20.0),
-          TextFrave(text: 'Without Delivery men', color: ColorsFrave.primaryColor, fontSize: 20)
+          TextFrave(text: 'No Delivery men', color: ColorsFrave.primaryColor, fontSize: 20)
         ],
       ),
     );
