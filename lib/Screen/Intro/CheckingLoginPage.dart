@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:restaurant/Bloc/Auth/auth_bloc.dart';
 import 'package:restaurant/Bloc/User/user_bloc.dart';
 import 'package:restaurant/Screen/Client/ClientHomePage.dart';
+import 'package:restaurant/Screen/Delivery/DeliveryHomePage.dart';
 import 'package:restaurant/Screen/Home/SelectRolePage.dart';
 import 'package:restaurant/Screen/Login/LoginPage.dart';
 import 'package:restaurant/Themes/ColorsFrave.dart';
@@ -64,13 +65,18 @@ class _CheckingLoginPageState extends State<CheckingLoginPage> with TickerProvid
 
           userBloc.add( OnGetUserEvent(state.user!) );
 
-          if( state.rolId  == '1' || state.rolId  == '3' ){
+          if( state.rolId == '1' ){
 
             Navigator.pushAndRemoveUntil(context, routeFrave(page: SelectRolePage()), (route) => false);
-          
-           } else if ( state.rolId  == '2' ){
 
-            Navigator.pushAndRemoveUntil(context, routeFrave(page: ClientHomePage()), (route) => false);          
+          } else if ( state.rolId == '2' ){
+
+            Navigator.pushAndRemoveUntil(context, routeFrave(page: ClientHomePage()), (route) => false);
+
+          } else if ( state.rolId == '3' ){
+
+            Navigator.pushAndRemoveUntil(context, routeFrave(page: DeliveryHomePage()), (route) => false);
+
           }
         }
       },
