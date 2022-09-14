@@ -81,7 +81,7 @@ class PushNotification {
     await http.post(uri, 
       headers: <String, String>{ 
         'Content-Type' : 'application/json',
-        'Authorization' : 'key=AAAACrHLUmw:APA91bE5HnBL-Xrl3dEk5gDX9oa0WwecPMvctYD3pwUYa7wV2eyotlHshOJHcflWJ81efaFtFiMPvIzDvrkLybnuDbAMgnYejkiMAjgdUaXE-aEco6qbLHvUrN5qLW2DcsAt90HzpMNz'
+        'Authorization' : 'key'
       },
       body: jsonEncode( <String, dynamic>{
         'notification' : {
@@ -103,7 +103,7 @@ class PushNotification {
     await http.post(uri, 
       headers: <String, String>{ 
         'Content-Type' : 'application/json',
-        'Authorization' : 'key=AAAACrHLUmw:APA91bE5HnBL-Xrl3dEk5gDX9oa0WwecPMvctYD3pwUYa7wV2eyotlHshOJHcflWJ81efaFtFiMPvIzDvrkLybnuDbAMgnYejkiMAjgdUaXE-aEco6qbLHvUrN5qLW2DcsAt90HzpMNz'
+        'Authorization' : 'key'
       },
       body: jsonEncode( <String, dynamic>{
         'notification' : {
